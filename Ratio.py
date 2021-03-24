@@ -1,33 +1,32 @@
 class Ratio(object):
     
     #Constructeurs
-    def __init__(self, denominateur, numerateur):
+    def __init__(self, numerateur, denominateur):
 
-        if isinstance(denominateur, int) == False  or isinstance(numerateur, int) == False:
+        if isinstance(numerateur, int) == False  or isinstance(denominateur, int) == False:
             raise ValueError
         else:
-            self.denominateur = denominateur
             self.numerateur = numerateur
+            self.denominateur = denominateur
 
 
     #Getters
     @property
-    def denominateur (self):
-        return self.__denominateur
-
-    @property
     def numerateur (self):
         return self.__numerateur
 
+    @property
+    def denominateur (self):
+        return self.__denominateur
 
     #Setters
-    @denominateur.setter
-    def denominateur(self, value):
-        self.__denominateur = value
-
     @numerateur.setter
     def numerateur(self, value):
         self.__numerateur = value
+
+    @denominateur.setter
+    def denominateur(self, value):
+        self.__denominateur = value
 
 
 
