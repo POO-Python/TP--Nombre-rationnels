@@ -1,8 +1,10 @@
 from Ratio import Ratio
 def main():
-
+    print("Saisissez un premier nombre rationnel:")
+    numerateur = input("Numérateur : ")
+    denominateur = input("Dénominateur : ")
     try:
-        Ratio('azerty',2,3,4)
+        Ratio(numerateur,denominateur)
     except ValueError:
         print("Veuillez entrer un nombre positif")
     except Exception as e:
