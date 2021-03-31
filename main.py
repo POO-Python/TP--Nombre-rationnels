@@ -63,5 +63,7 @@ def main():
     r2 = saisie_2eme_fractions()
     print("Le deuxième nombre rationnel saisi est : ", r2)
 
+    print(r1 + r2)
+
 
 main()
