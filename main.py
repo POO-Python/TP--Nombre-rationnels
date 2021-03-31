@@ -29,8 +29,7 @@ def saisie_1er_fraction():
         print("Un dénominateur ne peut pas être égal à zéro.\n")
         saisie_1er_fraction()
     except Exception as e:
-        print(type(e))
-        print(e)
+        print("Une erreur est survenue")
 
 #Fonction qui permet de saisir la deuxième fractions
 #Renvoie une instance de la Classe Ratio
@@ -50,20 +49,24 @@ def saisie_2eme_fractions():
         print("Un dénominateur ne peut pas être égal à zéro.\n")
         saisie_2eme_fractions()
     except Exception as e:
-        print(type(e))
-        print(e)
+        print("Une erreur est survenue")
 
 
 #Fonction Principal
 def main():
     
     r1 = saisie_1er_fraction()
-    print("Le premier nombre rationnel saisi est : ", r1)
+    print("\nLe premier nombre rationnel saisi est : ", r1)
 
     r2 = saisie_2eme_fractions()
-    print("Le deuxième nombre rationnel saisi est : ", r2)
+    print("\nLe deuxième nombre rationnel saisi est : ", r2)
 
     print(r1 + r2)
+
+    try:
+        print(r1 / r2)
+    except ZeroDivisionError:
+        print("Division impossible car le deuxième nombre rationnel est nul.")
 
 
 main()
