@@ -55,6 +55,7 @@ Saisissez un deuxième nombre rationnel :
  - Le deuxième nombre rationnel saisi est : -5/2
  - Résultat de l'addition des deux nombres rationnels saisis : -4
  - Résultat de la division du premier nombre rationnel saisi par le deuxième : 3/5
+
 Exemple 2 :
 Saisissez un premier nombre rationnel :
  - Numérateur : 15
