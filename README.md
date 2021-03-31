@@ -1,4 +1,5 @@
 ﻿#TP : Nombres rationnels
+
 Un nombre rationnel est un nombre qui peut s’écrire comme une fraction de deux entiers : numérateur 
 et dénominateur (le dénominateur devant être non nul).
 
